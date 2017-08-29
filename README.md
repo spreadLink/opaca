@@ -5,11 +5,7 @@ project/
 |
 +-- project.opam
 |
-+-- LICENSE
-|
 +-- README.md
-|
-+-- .git/...
 |
 +-- src/
 |   |
@@ -17,9 +13,9 @@ project/
 |
 +-- target/
 |   |
-|   +-- byte
+|   +-- byte/
 |   |
-|   `-- native
+|   `-- native/
 |   
 +-- tests/
 |   |
