@@ -1,6 +1,6 @@
 
-//File structure:
-
+######File structure:
+```
 project/
 |
 +-- project.opam
@@ -22,7 +22,10 @@ project/
 |   \`-- test.ml
 |
 \`-- docs/
+```
 
+######Cmd interface:
+```
 opaca help	    -> help
 opaca new     	    -> scaffold new project
 opaca run 	    -> run project
@@ -35,3 +38,4 @@ opaca publish 	    -> generate opam package
 opaca publish -aur  -> aur package
 opaca publish -brew -> brew package
 opaca publish -deb  -> debian package
+```
