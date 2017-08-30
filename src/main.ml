@@ -29,8 +29,6 @@ module New: NEW = struct
     (Unix.mkdir name umask;
      Unix.mkdir (name ^ "/src") umask;
      Unix.mkdir (name ^ "/target") umask;
-     Unix.mkdir (name ^ "/target/byte") umask;
-     Unix.mkdir (name ^ "/target/native") umask;
      Unix.mkdir (name ^ "/tests") umask;
      Unix.mkdir (name ^ "/docs") umask)
 
