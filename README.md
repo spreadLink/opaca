@@ -1,5 +1,5 @@
 
-######File structure:
+###### File structure:
 ```
 project/
 |
@@ -24,7 +24,7 @@ project/
 \`-- docs/
 ```
 
-######Cmd interface:
+###### Cmd interface:
 ```
 opaca help	    -> help
 opaca new     	    -> scaffold new project
