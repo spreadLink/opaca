@@ -27,7 +27,7 @@ project/
 ###### Cmd interface:
 ```
 opaca help	    -> help
-opaca new     	    -> scaffold new project
+opaca new "project" -> scaffold new project
 opaca run 	    -> run project
 opaca run -byte	    -> run bytecode interpreter
 opaca build	    -> builds project to native
