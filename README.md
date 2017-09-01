@@ -39,3 +39,12 @@ opaca publish -aur  -> aur package
 opaca publish -brew -> brew package
 opaca publish -deb  -> debian package
 ```
+
+- [x] opaca help
+- [x] opaca new (the mechanical bits, not sure if the structure remains tbh)
+- [ ] opaca run
+- [ ] opaca build
+- [ ] opaca test
+- [ ] opaca publish
+- [ ] opaca doc
+- [ ] the manifest/meta file idk
