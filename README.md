@@ -48,3 +48,21 @@ opaca publish -deb  -> debian package
 - [ ] opaca publish
 - [ ] opaca doc
 - [ ] the manifest/meta file idk
+
+Sample manifest file:
+```
+> Meta
+  name: Sample
+  version: 0.1
+  authors: spreadTest
+  maintainer: spreadTest, testLink
+  homepage: github.com/spreadlink/opaca
+  bug-reports: github.com/spreadlink/opaca/issues
+  dev-repo: github.com/spreadlink/opaca.git
+
+> Dependencies
+  OCaml: >= 4.04.0
+
+> Conflicts
+  acapo: > 0.0
+  ```
