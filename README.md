@@ -13,9 +13,9 @@ project/
 |
 +-- target/
 |   |
-|   +-- byte/
+|   +-- dev/
 |   |
-|   \`-- native/
+|   \`-- release/
 |   
 +-- tests/
 |   |
