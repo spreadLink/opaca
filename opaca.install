@@ -8,5 +8,6 @@ bin: [
 doc: [
   "_build/install/default/doc/opaca/README.md~"
   "_build/install/default/doc/opaca/README.md"
-  "_build/install/default/doc/opaca/LICENSE"
+  "_build/install/default/doc/opaca/LICENSE.md"
+  "_build/install/default/doc/opaca/CHANGES.md"
 ]

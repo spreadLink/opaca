@@ -7,7 +7,9 @@ homepage: "https://github.com/spreadLink/opaca"
 bug-reports: "https://github.com/spreadLink/opaca/issues"
 dev-repo: "https://github.com/spreadLink/opaca.git"
 license: "MIT License"
-build: []
-install: []
-remove: []
-depends: []
+build: ["jbuilder" "build"]
+depends: [
+  "ocamlfind" {build}
+  "jbuilder" {build}
+  "topkg" {build}
+]

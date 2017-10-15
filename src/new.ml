@@ -24,10 +24,14 @@ end
 (* default umask 0o777 for dirs, 0o666 for files *)
 let dirs name =
   let umask = 0o777 in
-  (Unix.mkdir name umask;
-   Unix.mkdir (name ^ "/src") umask;
-   Unix.mkdir (name ^ "/pkg") umask;
-   Unix.mkdir (name ^ "/doc") umask)
+  try (Unix.mkdir name umask;
+       Unix.mkdir (name ^ "/src") umask;
+       Unix.mkdir (name ^ "/pkg") umask;
+       Unix.mkdir (name ^ "/doc") umask)
+  with
+    Unix.Unix_error (Unix.EEXIST, _, _) ->
+      (print_endline @@ "ERROR: Cannot scaffold '" ^ name ^ "' - Directory already exists";
+       exit 1)
   
 let files name =
   let fcreate path init=
@@ -46,9 +50,11 @@ let files name =
    fcreate "pkg/pkg.ml" Resource.pkg;
    fcreate (name ^ ".opam") Resource.opam;
    fcreate ".merlin" Resource.merlin;
-   match Sys.argv.(3) with
-   | "--bin" | "-b" | "--exe" -> exe ()
-   | _ -> lib ())
+   try
+     match Sys.argv.(3) with
+     | "--bin" | "-b" | "--exe" -> exe ()
+     | _ -> lib ()
+   with Invalid_argument _ -> lib ())
   
   
 let scaffold () =
