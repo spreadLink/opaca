@@ -1,0 +1,12 @@
+lib: [
+  "_build/install/default/lib/opaca/META" {"META"}
+  "_build/install/default/lib/opaca/opam" {"opam"}
+]
+bin: [
+  "_build/install/default/bin/opaca" {"opaca"}
+]
+doc: [
+  "_build/install/default/doc/opaca/README.md~"
+  "_build/install/default/doc/opaca/README.md"
+  "_build/install/default/doc/opaca/LICENSE"
+]
