@@ -1,13 +1,8 @@
-lib: [
-  "_build/install/default/lib/opaca/META" {"META"}
-  "_build/install/default/lib/opaca/opam" {"opam"}
-]
-bin: [
-  "_build/install/default/bin/opaca" {"opaca"}
-]
+# opaca
+
 doc: [
-  "_build/install/default/doc/opaca/README.md~"
-  "_build/install/default/doc/opaca/README.md"
-  "_build/install/default/doc/opaca/LICENSE.md"
-  "_build/install/default/doc/opaca/CHANGES.md"
-]
+  "_build/CHANGES.md" {"CHANGES.md"}
+  "_build/LICENSE.md" {"LICENSE.md"}
+  "_build/README.md" {"README.md"} ]
+lib: [
+  "_build/opaca.opam" {"opaca.opam"} ]
