@@ -1,5 +1,4 @@
-# Opaca
-### A friendly OCaml project scaffolding tool
+# Opaca -- A friendly OCaml project scaffolding tool
 
 Opaca quickly sets up a basic project to be used with jbuilder[link?] and topkg[link?]
 
