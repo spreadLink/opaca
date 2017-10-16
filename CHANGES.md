@@ -1,3 +1,8 @@
+0.1.4
+-----
+
+fiddlying with dependencies
+
 0.1.3
 -----
 
