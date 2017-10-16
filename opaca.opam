@@ -8,8 +8,8 @@ dev-repo: "https://github.com/spreadLink/opaca.git"
 doc: "https://spreadlink.github.io/opaca/"
 license: "MIT License"
 build: ["jbuilder" "build"]
+available: [ocaml-version >= "4.03.0"]
 depends: [
-  "ocamlfind" {build}
   "jbuilder" {build}
   "topkg" {build}
 ]
