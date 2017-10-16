@@ -1,6 +1,6 @@
 
 module IO = struct
-  
+
   let read_line inc =
     try Some (input_line inc)
     with End_of_file -> None
@@ -18,9 +18,9 @@ module IO = struct
     in (cp @@ read_line inc;
         flush out;
         close_out out)
-     
+
 end
-    
+
 (* default umask 0o777 for dirs, 0o666 for files *)
 let dirs name =
   let umask = 0o777 in
@@ -30,9 +30,9 @@ let dirs name =
        Unix.mkdir (name ^ "/doc") umask)
   with
     Unix.Unix_error (Unix.EEXIST, _, _) ->
-      (print_endline @@ "ERROR: Cannot scaffold '" ^ name ^ "' - Directory already exists";
-       exit 1)
-  
+    (print_endline @@ "ERROR: Cannot scaffold '" ^ name ^ "' - Directory already exists";
+     exit 1)
+
 let files name =
   let fcreate path init=
     let oc = open_out @@ name ^ "/" ^ path
@@ -50,14 +50,14 @@ let files name =
    fcreate "pkg/pkg.ml" Resource.pkg;
    fcreate (name ^ ".opam") Resource.opam;
    fcreate ".merlin" Resource.merlin;
-   fcreate "doc/api.odocl" ""
+   fcreate "doc/api.odocl" "";
    try
      match Sys.argv.(3) with
      | "--bin" | "-b" | "--exe" -> exe ()
      | _ -> lib ()
    with Invalid_argument _ -> lib ())
-  
-   
+
+
 let scaffold () =
   if Array.length Sys.argv >= 3 then
     (dirs Sys.argv.(2);
