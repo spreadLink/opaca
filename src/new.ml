@@ -50,6 +50,7 @@ let files name =
    fcreate "pkg/pkg.ml" Resource.pkg;
    fcreate (name ^ ".opam") Resource.opam;
    fcreate ".merlin" Resource.merlin;
+   fcreate "doc/api.odocl" ""
    try
      match Sys.argv.(3) with
      | "--bin" | "-b" | "--exe" -> exe ()
