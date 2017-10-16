@@ -1,3 +1,8 @@
+0.1.2
+-----
+
+hopefully release via topkg
+
 0.1.1
 -----
 
