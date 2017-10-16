@@ -5,7 +5,7 @@ maintainer: "Mia Kathage <siboru@googlemail.com>"
 homepage: "https://github.com/spreadLink/opaca"
 bug-reports: "https://github.com/spreadLink/opaca/issues"
 dev-repo: "https://github.com/spreadLink/opaca.git"
-doc: "https://spreadlink.github.io/opaca"
+doc: "https://spreadlink.github.io/opaca/"
 license: "MIT License"
 build: ["jbuilder" "build"]
 depends: [
