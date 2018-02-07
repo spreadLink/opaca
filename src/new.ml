@@ -45,7 +45,7 @@ let opam_init name =
     | WSIGNALED n -> n
     | WSTOPPED n  -> n in
   try if exitc = 0 then
-      ()
+      Unix.rename (name ^ "/opam") (name ^ "/" ^ name ^".opam")
     else
       begin
         print_endline @@ "Opam init exited with non-0 exit code: " ^ string_of_int exitc ^"
