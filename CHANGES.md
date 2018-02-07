@@ -1,3 +1,8 @@
+0.2.0
+-----
+
+Better integration with opam, now generates Makefiles
+
 0.1.5
 -----
 
