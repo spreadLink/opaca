@@ -33,17 +33,15 @@ let jbuild_exe name =
 
 let jbuild_lib name =
   "(jbuild_version 1)
+
 (library
-  (name " ^ name ^ ")
-  (public_name " ^ name ^ ")
-  (synopsis \"\")
-  (libraries ()))"
+  ((name " ^ name ^ ")
+   (public_name " ^ name ^ ")
+   (synopsis \"\")
+   (libraries ())))"
 
 let pkg =
   "#use \"topfind\"\n#require \"topkg-jbuilder.auto\""
-
-let merlin =
-  "S src\nB _build"
 
 let main =
   "let () = print_endline \"Hello, world!\""
