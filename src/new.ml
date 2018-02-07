@@ -77,6 +77,7 @@ let files name =
     fcreate "LICENSE.md" "";
     fcreate "pkg/pkg.ml" Resource.pkg;
     fcreate "doc/api.odocl" "";
+    fcreate "Makefile" Resource.make;
     (try
       match Sys.argv.(3) with
       | "--bin" | "-b" | "--exe" -> exe ()
